@@ -3,7 +3,7 @@
 一个完全在**本地**运行的图片 / 视频加密工具。文件用密码加密后变成 `.svenc` 密文，
 **密码错误时在密码学上无法解开、无法查看内容**（不是"隐藏"，是真加密）。
 
-> 🔽 **免安装版**：到 [Releases](../../releases) 页面下载 `加密保险箱.exe`，双击即用，无需安装 Python。
+> 🔽 **免安装版**：到 [Releases](../../releases) 页面下载 `SecureVault.exe`（即「加密保险箱.exe」），双击即用，无需安装 Python。
 
 ## 怎么运行
 
@@ -72,4 +72,4 @@ python secure_vault.py --selftest  # 自检（验证加解密功能是否正常�
 |------|------|
 | `secure_vault.py` | 源代码（可审计，`python secure_vault.py --selftest` 自检） |
 | `启动加密保险箱.bat` | 用 Python 源码启动的入口（备用） |
-| `加密保险箱.exe` | 免安装主程序，见 [Releases](../../releases) 下载 |
+| `SecureVault.exe` | 免安装主程序（加密保险箱），见 [Releases](../../releases) 下载 |
