@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# 打包产物
+build/
+dist/
+*.spec
+icon.png
+icon.ico
+*.exe
+
+# 加密测试文件
+*.svenc
+.part
+.svtmp_*
+
+# 本地工具
+ghcli/
