@@ -38,6 +38,7 @@
 1. **加密**：添加文件 / 整个文件夹（自动找出图片视频）→ 输入密码 → 开始加密
 2. **解密**：选择 `.svenc` 文件 → 输入密码 → 解密到原位置，或「解密并预览」看完自动清理
 3. 密码错误 → 立即停止，什么都不显示
+> 🔎 **校验下载**：下载后可用 PowerShell 核对文件完整性，与 [Release 说明](../../releases/latest) 中的 SHA-256 一致即为未篡改：`Get-FileHash .\SecureVault.exe -Algorithm SHA256`
 
 > ⚠️ **密码遗忘 = 文件永远打不开**（AES-256 无法找回），请牢记密码。
 
@@ -106,7 +107,8 @@ python secure_vault.py --selftest  # 10 项安全自检
 
 ### Quick start
 
-Download [`SecureVault.exe`](../../releases/latest), double-click, done. Or run from source:
+Download [`SecureVault.exe`](../../releases/latest), double-click, done. > 🔎 **Verify your download**: `Get-FileHash .\SecureVault.exe -Algorithm SHA256` — compare against the SHA-256 in the [release notes](../../releases/latest).
+Or run from source:
 
 ```bash
 pip install cryptography
